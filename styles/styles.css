@@ -36,6 +36,22 @@ input[type="number"]::-webkit-inner-spin-button {
   margin: 0;
 }
 
+.button {
+  margin: 0;
+  padding: 9px 15px 8px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background: #756157;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -61,6 +77,7 @@ input[type="number"]::-webkit-inner-spin-button {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .navigation {
@@ -115,7 +132,7 @@ input[type="number"]::-webkit-inner-spin-button {
   padding-left: 12px;
   padding-right: 12px;
   padding-bottom: 23px;
-  background-image: url(../images/search.svg);
+  background-image: url("../images/search.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -128,7 +145,7 @@ input[type="number"]::-webkit-inner-spin-button {
   padding-left: 12px;
   padding-right: 12px;
   padding-bottom: 24px;
-  background-image: url(../images/favorite.svg);
+  background-image: url("../images/favorite.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -186,21 +203,6 @@ input[type="number"]::-webkit-inner-spin-button {
 .welcome-img {
   display: block;
   margin: 51px 371px 82px;
-}
-
-.button {
-  padding: 9px 15px 8px;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #ffffff;
-  background: #756157;
-  border: 0px;
-  border-radius: 4px;
-  cursor: pointer;
 }
 
 .button-current {
@@ -282,7 +284,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .sublist-description {
-  margin: 0px;
+  margin: 0;
   padding-bottom: 81px;
   font-size: 18px;
   line-height: 21px;
@@ -291,21 +293,21 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .icon-housing {
   padding-top: 182px;
-  background-image: url(../images/housing.svg);
+  background-image: url("../images/housing.svg");
   background-repeat: no-repeat;
   background-position: 163px 80px;
 }
 
 .icon-eating {
   padding-top: 182px;
-  background-image: url(../images/eating.svg);
+  background-image: url("../images/eating.svg");
   background-repeat: no-repeat;
   background-position: 163px 81px;
 }
 
 .icon-souvenir {
   padding-top: 182px;
-  background-image: url(../images/souvenir.svg);
+  background-image: url("../images/souvenir.svg");
   background-repeat: no-repeat;
   background-position: 168px 78px;
 }
@@ -426,7 +428,7 @@ input[type="number"]::-webkit-inner-spin-button {
   font-size: 20px;
   line-height: 36px;
   background: #82B3D3;
-  border-radius: 0px 10px 10px 0px;
+  border-radius: 0 10px 10px 0;
 }
 
 .subscribe-description {
@@ -450,17 +452,18 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .welcome {
-  background-image: url(../images/divider.svg), url(../images/background-welcome.jpg);
+  background-image: url("../images/divider.svg"), url("../images/background-welcome.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: bottom, top;
 }
 
 .welcome-title {
-  margin: 0px;
+  margin: 0;
 }
 
 .field {
-  border-radius: 10px 0px 0px 10px;
+  margin: 0;
+  border-radius: 10px 0 0 10px;
   width: 600px;
   height: 60px;
   padding: 0;
@@ -469,6 +472,7 @@ input[type="number"]::-webkit-inner-spin-button {
   line-height: 21px;
   color: #000000;
   background: #F2F2F2;
+  cursor: pointer;
 }
 
 .filter-catalog {
@@ -504,7 +508,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .breadcrumbs-link {
   display: block;
   margin: 0;
-  padding-left: 15px;
+  padding-left: 17px;
   font-size: 16px;
   line-height: 21px;
   background-image: url("../images/breadcrumbs-arrow.svg");
@@ -518,7 +522,7 @@ input[type="number"]::-webkit-inner-spin-button {
   padding-top: 4px;
   padding-bottom: 6px;
   padding-right: 10px;
-  padding-left: 0px;
+  padding-left: 0;
   display: block;
   width: 12px;
   height: 12px;
@@ -545,8 +549,8 @@ input[type="number"]::-webkit-inner-spin-button {
 .filter-group {
   padding: 0;
   margin-right: 70px;
-  margin-left: 0px;
-  border: 0px;
+  margin-left: 0;
+  border: 0;
   min-height: 148px;
 }
 
@@ -568,7 +572,7 @@ input[type="number"]::-webkit-inner-spin-button {
   text-align: center;
   color: #ffffff;
   background: rgba(0, 0, 0, 0);
-  border: 0px;
+  border: 0;
   cursor: pointer;
 }
 
@@ -609,13 +613,13 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .control-input {
-  margin: 0px;
+  margin: 0;
   padding-right: 20px;
 }
 
 .control-mark {
   position: absolute;
-  left: 0;
+  left: 3px;
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -623,7 +627,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .control-input:focus + .control-mark {
-  box-shadow: 0px 0px 0px 3px #81B3D2;
+  box-shadow: 0 0 0 3px #81B3D2;
 }
 
 .control-input[type="radio"]:checked + .control-mark::before {
@@ -639,7 +643,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .control-input[type="checkbox"]:checked + .control-checkmark {
-  background-image: url(../images/checkmark.svg);
+  background-image: url("../images/checkmark.svg");
   background-repeat: no-repeat;
   content: "";
 }
@@ -659,7 +663,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .control-input:focus + .control-checkmark {
   background: rgba(255, 255, 255, 0.6);
-  box-shadow: 0px 0px 0px 3px #81B3D2;
+  box-shadow: 0 0 0 3px #81B3D2;
 }
 
 .control {
@@ -668,11 +672,12 @@ input[type="number"]::-webkit-inner-spin-button {
   font-size: 18px;
   line-height: 21px;
   padding-bottom: 15px;
-  padding-left: 39px;
+  padding-left: 42px;
+  cursor: pointer;
 }
 
 .hotel-list {
-  padding-bottom: 66px;
+  padding-bottom: 67px;
   display: grid;
   grid-template-columns: 340px 340px 340px;
   column-gap: 18px;
@@ -712,7 +717,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .hotel-card-title {
-  margin: 0px;
+  margin: 0;
   padding-top: 12px;
   font-size: 24px;
   line-height: 28px;
@@ -720,7 +725,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .hotel-card-price {
-  margin: 0px;
+  margin: 0;
   padding-top: 16px;
   font-size: 18px;
   line-height: 21px;
@@ -731,6 +736,7 @@ input[type="number"]::-webkit-inner-spin-button {
   color: #333333;
   background: #F2F2F2;
   font-weight: 400;
+  cursor: default;
 }
 
 .hotel-card-stars {
@@ -786,8 +792,8 @@ input[type="number"]::-webkit-inner-spin-button {
 .catalog-filter-title {
   font-weight: 700;
   font-size: 20px;
-  margin-bottom: 32px;
-  padding-left: 0px;
+  margin-bottom: 34px;
+  padding-left: 0;
 }
 
 .catalog-filter-group {
@@ -795,7 +801,7 @@ input[type="number"]::-webkit-inner-spin-button {
   margin: 0;
   border: 0;
   width: 288px;
-  margin-right: 70px;
+  margin-right: 67px;
   margin-left: 108px;
 }
 
@@ -807,6 +813,8 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .range-input {
+  margin: 0;
+  font-family: "PT Sans";
   font-size: 18px;
   line-height: 21px;
   box-sizing: border-box;
@@ -814,8 +822,12 @@ input[type="number"]::-webkit-inner-spin-button {
   line-height: 21px;
   color: #ffffff;
   border: 0;
-  padding: 12px 17px 11px;
+  padding-left: 14px;
+  padding-top: 11px;
+  padding-bottom: 12px;
+  padding-right: 14px;
   background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
 }
 
 .value-from:hover,
@@ -826,7 +838,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .value-from:focus,
 .value-to:focus {
   outline: none;
-  box-shadow: 0px 0px 0px 3px #81B3D2;
+  box-shadow: 0 0 0 3px #81B3D2;
 }
 
 .value-from:active,
@@ -922,21 +934,22 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .range-toggle:hover {
   background: #FFFFFF;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .range-toggle:focus {
   border: 3px solid #83B3D3;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   outline: none
 }
 
 .range-toggle:active {
   border: 2px solid #83B3D3;
-  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
 }
 
 .select-control-view {
+  margin: 0;
   font-family: "PT Sans";
   margin-right: 74px;
   min-width: 290px;
@@ -948,10 +961,11 @@ input[type="number"]::-webkit-inner-spin-button {
   color: #333333;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
-  background-image: url(../images/arrow-down.svg);
+  background-image: url("../images/arrow-down.svg");
   background-repeat: no-repeat;
-  background-position: right 14px top 45%;
+  background-position: right 13px top 45%;
   appearance: none;
+  cursor: pointer;
 }
 
 .field::placeholder {
@@ -1030,9 +1044,11 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .select-control-hotel {
+  margin: 0;
   margin-left: auto;
   align-items: center;
   padding-left: 17px;
+  margin-top: 2px;
   width: 160px;
   height: 49px;
   font-size: 18px;
@@ -1040,10 +1056,11 @@ input[type="number"]::-webkit-inner-spin-button {
   color: #333333;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
-  background-image: url(../images/arrow-down.svg);
+  background-image: url("../images/arrow-down.svg");
   background-repeat: no-repeat;
   background-position: right 14px top 45%;
   appearance: none;
+  cursor: pointer;
 }
 
 .select-control-inner {
@@ -1194,7 +1211,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .footer-phone {
-  margin: 0px;
+  margin: 0;
 }
 
 .brown-button:hover {
@@ -1299,7 +1316,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .modal-button-close:focus{
   background-color: #E6E6E6;
-  border: 3px solid #83B3D3;
+  box-shadow: 0 0 0 3px #83B3D3;
 }
 
 .modal-button-close:active{
@@ -1360,7 +1377,7 @@ input[type="number"]::-webkit-inner-spin-button {
   height: 25px;
   border-radius: 50%;
   padding: 0;
-  background-image: url(../images/info.svg);
+  background-image: url("../images/info.svg");
   background-repeat: no-repeat;
   background-size: 1px 9px;
   background-position: center center;
@@ -1415,6 +1432,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .input-modal{
+  margin: 0;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1453,6 +1471,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .input-date{
+  margin: 0;
   width: 420px;
   padding-right: 47px;
   padding-left: 19px;
@@ -1476,6 +1495,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .input-age{
+  margin: 0;
   text-align: center;
 }
 
@@ -1489,15 +1509,15 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .button-age-plus {
-  padding-left: 10px;
+  padding-left: 12px;
   padding-right: 17px;
-  margin: 0px;
+  margin: 0;
 }
 
 .button-age-minus {
   background-color: #F2F2F2;
   border-radius: 4px 0 0 4px;
-  margin: 0px;
+  margin: 0;
 }
 
 .input-age::-webkit-outer-spin-button,
@@ -1598,8 +1618,8 @@ background-color: #F2F2F2;;
 
 .tooltip-text{
   position: absolute;
-  right: 37px;
-  bottom: -73px;
+  right: -140px;
+  bottom: -185px;
   width: 256px;
   background-color: #333333;
   color: #FFFFFF;
@@ -1616,7 +1636,7 @@ background-color: #F2F2F2;;
 
 .tooltip-text::after{
   content: "";
-  background-image: url(../images/modal-triangle.svg);
+  background-image: url("../images/modal-triangle.svg");
   position: absolute;
   bottom: 100%;
   width: 19px;
